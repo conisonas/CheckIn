@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E3F3F2;
+}
+
+li {
+  list-style: none;
+}
+
+.nav {
+  height: 100px;
+  border-bottom: 1px solid pink;
+}
+
+.nav_start {
+  float: left;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nav_end {
+  float: right;
+  position: relative;
+  margin-right: 30px;
+  padding-top: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+.year {
+  position: absolute;
+  height: 40px;
+  left: 10px;
+  top: 20px;
+  color: #101919;
+}
+
+.weekday {
+  position: absolute;
+  top: 23px;
+  right: 0px;
+  padding-right: 0;
+}
+
+.time {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  height: 54px;
+  line-height: 54px;
+  font-size: 40px;
+}
+
+.middle {
+  padding-top: 20px;
+
+}
+
+.middle .fl {
+  float: left;
+  width: 300px;
+  height: 560px;
+  margin-left: 40px;
+  margin-right: 20px;
+  background-color: #dbe8ef;
+}
+
+.middle .fr {
+  float: left;
+  width: 1150px;
+  height: 560px;
+  background-color: rgb(90, 16, 150);
+}
+
+.fl_total {
+  height: 60px;
+  width: 300px;
+  padding-top: 20px;
+  /* border-bottom: 2px solid palevioletred; */
+}
+
+.fl_total h5 {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+  background: url(../img/logo2.png) no-repeat;
+}
+
+.fl_total p {
+  font-size: 25px;
+  margin-top: -1px;
+  font-weight: bold;
+  color: #65C799;
+}
+
+.fl_detail {
+  width: 260px;
+  height: 460px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+}
+.fl_detail ul li{
+  height: 150px;
+}
+.fl_detail ul li h1{
+  text-align: center;
+  padding-top: 30px;
+}
+.fl_detail ul li p{
+  text-align: center;
+  padding-top: 10px;
+}
