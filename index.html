@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>考勤系统</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/icon" href="/img/logo.png">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>考勤系统</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/icon" href="/img/logo.png">
 </head>
 
 <body>
   <div>
     <!-- 头部 -->
-    <nav class="nav">
+    <nav class="nav" id="as">
       <h2 class="nav_start">公司考勤系统</h2>
       <div class="nav_end">
         <h4 class="year">2022-12-01</h4>
@@ -23,7 +23,7 @@
     <div class="middle">
       <div class="fl">
         <div class="fl_total">
-         <h5></h5>
+          <h5></h5>
           <p>员工考勤情况</p>
         </div>
         <div class="fl_detail">
@@ -45,40 +45,12 @@
       </div>
       <div class="fr">
         <div class="start">
-          <ul>
-            <li>
-              <div class="name">喵喵</div>
-              <div class="apart">研发部</div>
-              <div class="times">
-                <p>今日出勤:</p><p>10:36</p>
-              </div>
-            </li>
-            <li>
-              <div class="name">喵喵</div>
-              <div class="apart">研发部</div>
-              <div class="times">
-                <p>今日出勤:</p><p>10:36</p>
-              </div>
-            </li>
-            <li>
-              <div class="name">喵喵</div>
-              <div class="apart">研发部</div>
-              <div class="times">
-                <p>今日出勤:</p><p>10:36</p>
-              </div>
-            </li>
-            <li>
-              <div class="name">喵喵</div>
-              <div class="apart">研发部</div>
-              <div class="times">
-                <p>今日出勤:</p><p>10:36</p>
-              </div>
-            </li>
-          </ul>
+          <ul id="list" onclick="ChangeColor(event)"></ul>
         </div>
       </div>
     </div>
   </div>
   <script src="/func.js"></script>
 </body>
+
 </html>
