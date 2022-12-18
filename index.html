@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <title>考勤系统</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" type="image/icon" href="/img/logo.png">
+
+<head>
+  <meta charset="utf-8">
+  <title>考勤系统</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/icon" href="/img/logo.png">
 </head>
 
 <body>
@@ -14,9 +14,9 @@
     <nav class="nav" id="as">
       <h2 class="nav_start">公司考勤系统</h2>
       <div class="nav_end">
-        <h4 class="year">2022-12-01</h4>
-        <h4 class="weekday">星期四</h4>
-        <h1 class="time">10:18:23</h1>
+        <h4 class="year" id="year"></h4>
+        <h4 class="weekday" id="weekday"></h4>
+        <h1 class="time" id="time"></h1>
       </div>
     </nav>
     <!--   中间部分 -->
@@ -29,15 +29,15 @@
         <div class="fl_detail">
           <ul>
             <li>
-              <h1>100</h1>
+              <h1 id="total"></h1>
               <p>应打卡人数</p>
             </li>
             <li>
-              <h1>80</h1>
+              <h1 id="check"></h1>
               <p>已打卡</p>
             </li>
             <li>
-              <h1>20</h1>
+              <h1 id="uncheck"></h1>
               <p>未打卡</p>
             </li>
           </ul>
@@ -45,12 +45,32 @@
       </div>
       <div class="fr">
         <div class="start">
-          <ul id="list" onclick="ChangeColor(event)"></ul>
+          <button onclick="Change()" class="add">新增员工</button>
+          <ul id="list" onclick="ChangeColor(event)">
+            <div id="test1"></div>
+          </ul>
         </div>
       </div>
     </div>
+
   </div>
-  <div>新增员工打卡</div>
+  <div class="dialog" id="demo">
+    <div class="dialog-form">
+      <div class="dialog-title">
+        <p id="dialog-name"></p>
+        <button onclick="exit()"><span>x</span></button>
+      </div>
+      <div class="dialog-detail">
+        <form>
+          <label for="fname">姓名</label>
+          <input type="text" id="name" name="name" placeholder="请输入姓名">
+          <label for="lname">部门</label>
+          <input type="text" id="apartment" name="apartment" placeholder="请输入部门">
+          <input id="dialog-submit" type="submit" onclick="append()">
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="/func.js"></script>
 </body>
 
